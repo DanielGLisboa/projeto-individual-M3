@@ -30,5 +30,44 @@
         "cpf": 123456,
         "idade": 21
       }
+    ],
+
+    
+    "animal": [
+      {
+        "id": 1,
+        "nome": "Pipoca",
+        "raca": "poodle",
+        "especie": "Cachorro",
+        "idade": 9
+      },
+      {
+        "id": 2,
+        "nome": "Kindin",
+        "raca": "Persa",
+        "especie": "Gato",
+        "idade": 7
+      },
+      {
+        "id": 3,
+        "nome": "Cascão",
+        "raca": "pit-bull",
+        "especie": "Cachorro",
+        "idade": 4
+      },
+      {
+        "id": 4,
+        "nome": "Perola",
+        "raca": "Siamês",
+        "especie": "Gato",
+        "idade": 3
+      },
+      {
+        "id": 5,
+        "nome": "Geraldi",
+        "raca": "buldogue",
+        "especie": "Cachorro",
+        "idade": 6
+      }
     ]
   }
