@@ -32,7 +32,7 @@
       }
     ],
 
-    
+
     "animal": [
       {
         "id": 1,
@@ -69,5 +69,44 @@
         "especie": "Cachorro",
         "idade": 6
       }
-    ]
+    ],
+
+    
+  "inseto": [
+    {
+      "id": 1,
+      "tipo": "Formiga",
+      "especie": "Argentina",
+      "cor": "Marrom",
+      "tamanho": "10cm"
+    },
+    {
+      "id": 2,
+      "tipo": "Aranha",
+      "especie": "Armadeira",
+      "cor": "Marrom",
+      "tamanho": "4cm"
+    },
+    {
+      "id": 3,
+      "tipo": "Abelha",
+      "especie": "Africana",
+      "cor": "Amarelo/preto",
+      "tamanho": "17mm"
+    },
+    {
+      "id": 4,
+      "tipo": "Barata",
+      "especie": "Oriental",
+      "cor": "Preto",
+      "tamanho": "27mm"
+    },
+    {
+      "id": 5,
+      "tipo": "Borboleta",
+      "especie": "Rabo-de-Andorinha",
+      "cor": "Branco",
+      "tamanho": "7cm"
+    }
+  ]
   }
