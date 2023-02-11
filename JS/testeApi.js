@@ -151,3 +151,81 @@ async function cadastrarInseto(body){
 //     .catch(() => console.log('falha ao cadastrar um inseto'))
 
 ////////////////////////////////////////////////////////////////////////////////// FIM POST
+
+/////////////////////////////////////////////////////////////////////////////////////////// INICIO PUT
+// Pessoa
+async function atualizaPessoa(body){
+    let options = {
+        method: "PUT",
+        body: JSON.stringify(body),
+        headers: header
+    }
+    try{
+        const result = await fetch(`http://localhost:3000/pessoa/${body.id}`, options)
+    }
+    catch(error){
+        return console.error(error)
+    }
+}
+
+// Atualizando dados de uma pessoa
+// atualizaPessoa({id: 1, nome: "Daniel", cpf: 40646500654, idade: 25})
+//     .then(() => {
+//         console.log('atualização de dados de pessoa realizada com sucesso') 
+//         buscarPessoas()
+//     })
+//     .catch(() => console.log('falha ao tualizar dados de pessoa'))
+
+
+// Animal
+async function atualizaAnimal(body){
+    let options = {
+        method: "PUT",
+        body: JSON.stringify(body),
+        headers: header
+    }
+    try{
+        const result = await fetch(`http://localhost:3000/animal/${body.id}`, options)
+    }
+    catch(error){
+        return console.error(error)
+    }
+}
+
+// Atualizando dados de um animal
+// atualizaAnimal({id: 1, nome: "Pipoca", raca: "poodle", especie: "Cachorro" idade: 10})
+//     .then(() => {
+//         console.log('atualização de dados do animal realizada com sucesso')
+//         buscarAnimais()
+//     })
+//     .catch(() => console.log('falha ao atualizar dados do animal'))
+
+
+// Inseto
+async function atualizaInseto(body){
+    let options = {
+        method: "PUT",
+        body: JSON.stringify(body),
+        headers: header
+    }
+    try{
+        const result = await fetch(`http://localhost:3000/inseto/${body.id}`, options)
+    }
+    catch(error){
+        return console.error(error)
+    }
+}
+
+// Atualizando dados de um inseto
+// atualizaInseto({id:"1", tipo: "Formiga", especie: "Argentina", cor: "Marrom", tamanho: "10cm"})
+//     .then(() => {
+//         console.log('atualização de dados do inseto realizada com sucesso')
+//         buscarInsetos()
+//     })
+//     .catch(() => console.log('falha ao atualizar dados do inseto'))
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////// FIM PUT
