@@ -229,3 +229,77 @@ async function atualizaInseto(body){
 
 
 ////////////////////////////////////////////////////////////////////////////////////////// FIM PUT
+
+/////////////////////////////////////////////////////////////////////////////////////////////// INICIO DELETE
+// Pessoa
+async function deletaPessoa(body){
+    let options = {
+        method: "DELETE",
+        body: JSON.stringify(body),
+        headers: header
+    }
+    try{
+        const result = await fetch(`http://localhost:3000/pessoa/${body.id}`, options)
+    }
+    catch(error){
+        return console.log(error)
+    }
+}
+
+// Deletando uma pessoa
+// deletaPessoa({id: 7})
+//     .then(() => { 
+//         console.log('Pessoa deletada com sucesso')
+//         buscarPessoas()
+//     })
+//     .catch(() => console.log('falha ao deletar esta pessoa'))
+
+
+// Animal
+async function deletaAnimal(body){
+    let options = {
+        method: "DELETE",
+        body: JSON.stringify(body),
+        headers: header
+    }
+    try{
+        const result = await fetch(`http://localhost:3000/animal/${body.id}`, options)
+    }
+    catch(error){
+        return console.log(error)
+    }
+}
+
+// Deletando um animal
+// deletaAnimal({id: 5})
+//     .then(() => {
+//         console.log('Animal deletado com sucesso')
+//         buscarAnimais()
+//     })
+//     .catch(() => console.log('falha ao deletar este animal'))
+
+
+// Inseto
+async function deletaInseto(body){
+    let options = {
+        method: "DELETE",
+        body: JSON.stringify(body),
+        headers: header
+    }
+    try{
+        const result = await fetch(`http://localhost:3000/inseto/${body.id}`, options)
+    }
+    catch(error){
+        return console.log(error)
+    }
+}
+
+// Deletando um inseto
+// deletaInseto({id: 5})
+//     .then(() => {
+//         console.log('Inseto deletado com sucesso')
+//         buscarInsetos()
+//     })
+//     .catch(() => console.log('falha ao deletar inseto'))
+
+/////////////////////////////////////////////////////////////////////////////////////////// FIM DELETE
