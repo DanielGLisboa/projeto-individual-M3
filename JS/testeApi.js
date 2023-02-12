@@ -1,3 +1,5 @@
+const { defaultMaxListeners } = require("events")
+
 // Variavel que guarda o Header para utilização nos metodos
 let header = new Headers({
     'Content-type': 'application/json'
@@ -118,7 +120,7 @@ async function cadastrarAnimal(body){
 }
 
 // Cadastrando um animal
-// cadastrarAnimal({id:"", nome: "Leko",raca: "Pastor-alemão", especie: "Cachorro" idade: 9})
+// cadastrarAnimal({id:"", nome: "Bob",raca: "Pug", especie: "Cachorro", idade: 10})
 //     .then(() => {
 //         console.log('Animal Cadastrado')
 //         buscarAnimais()
@@ -169,7 +171,7 @@ async function atualizaPessoa(body){
 }
 
 // Atualizando dados de uma pessoa
-// atualizaPessoa({id: 1, nome: "Daniel", cpf: 40646500654, idade: 25})
+// atualizaPessoa({id: 6, nome: "Jonathan", cpf: 12345678905, idade: 30})
 //     .then(() => {
 //         console.log('atualização de dados de pessoa realizada com sucesso') 
 //         buscarPessoas()
@@ -193,7 +195,7 @@ async function atualizaAnimal(body){
 }
 
 // Atualizando dados de um animal
-// atualizaAnimal({id: 1, nome: "Pipoca", raca: "poodle", especie: "Cachorro" idade: 10})
+// atualizaAnimal({id: 6, nome: "Fred", raca: "Pug", especie: "Cachorro", idade: 10})
 //     .then(() => {
 //         console.log('atualização de dados do animal realizada com sucesso')
 //         buscarAnimais()
@@ -217,7 +219,7 @@ async function atualizaInseto(body){
 }
 
 // Atualizando dados de um inseto
-// atualizaInseto({id:"1", tipo: "Formiga", especie: "Argentina", cor: "Marrom", tamanho: "10cm"})
+// atualizaInseto({id:"5", tipo: "Borboleta", especie: "Azul", cor: "azul", tamanho: "5cm"})
 //     .then(() => {
 //         console.log('atualização de dados do inseto realizada com sucesso')
 //         buscarInsetos()
@@ -247,7 +249,7 @@ async function deletaPessoa(body){
 }
 
 // Deletando uma pessoa
-// deletaPessoa({id: 7})
+// deletaPessoa({id: 6})
 //     .then(() => { 
 //         console.log('Pessoa deletada com sucesso')
 //         buscarPessoas()
@@ -271,7 +273,7 @@ async function deletaAnimal(body){
 }
 
 // Deletando um animal
-// deletaAnimal({id: 5})
+// deletaAnimal({id: 6})
 //     .then(() => {
 //         console.log('Animal deletado com sucesso')
 //         buscarAnimais()
