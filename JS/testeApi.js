@@ -1,5 +1,3 @@
-const { defaultMaxListeners } = require("events")
-
 // Variavel que guarda o Header para utilização nos metodos
 let header = new Headers({
     'Content-type': 'application/json'
